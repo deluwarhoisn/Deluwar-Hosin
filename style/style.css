@@ -4,6 +4,7 @@
 #name{
     font-size: 32px;
     color: white;
+   
 }
 #ul{
     display: flex;
@@ -22,6 +23,8 @@
 .header{
     background-color: black;
     color: white;
+   padding-bottom: 50px;
+   margin-bottom: 100px;
     
 }
 #profile{
