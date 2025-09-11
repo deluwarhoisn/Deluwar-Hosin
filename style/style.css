@@ -96,7 +96,7 @@ main{
 }
 .grid{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33% 33% 33%;
     padding: 10px;
     gap: 8px;
 
