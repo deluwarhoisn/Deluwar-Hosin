@@ -147,6 +147,27 @@ main{
     height:500px;
 }
 
-@media screen and (min-width:576px) {
+@media screen and (max-width:576px) {
+    .nav{
+    margin: 4px;
+    padding: 40px;
+    }
+    .header{
+        font-size: medium;
+    }
+    #name{
+        font-size: medium;
+        padding-right: 18px;
+        
     
+    }
+   .text{
+    padding: 5px;
+    font-size: medium;
+   }
+   .img{
+    width: 50%;
+    height: 500px;
+
+   }
 }
