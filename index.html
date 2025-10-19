@@ -1,156 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deluwar Hosin</title>
-    <link rel="stylesheet" href="style/style.css">
-</head>
+    <!-- ✅ Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<body>
-    <header class="header">
-        <!-- navigation -->
-        <nav class="nav">
-            <div>
-                <h1 id="name">Deluwar Hosin</h1>
-            </div>
-            <div>
-                <ul id="ul">
-                    <li><a href="#education">Education</a></li>
-                    <li>Project</li>
-                    <li>About</li>
-                    <li>Contract</li>
-                </ul>
-            </div>
-        </nav>
-        <!-- profile -->
-        <section id="profile">
-            <div class="img">
-                <img src="image/profile babu.jpeg.jpg" alt="">
-            </div>
-            <div class="text">
-                <h2>Hi, I Am</h2>
-                <h1>Deluwar Hosin</h1>
-                <p>Creative and Personal
-                    "I love bringing ideas to life through code! I'm a Full-Stack Developer dedicated to creating
-                    software that simplifies lives. My interests span from. My passion lies in injecting innovation and
-                    functionality into every line of code."</p>
-                <button> <a href="#">Download CV</a></button>
-            </div>
-        </section>
+  <body class="bg-gray-900 text-white font-sans">
+    <!-- 🌟 Header -->
+    <header class="w-full">
+      <!-- Navigation -->
+      <nav class="flex justify-between items-center px-8 py-4 bg-gray-800 shadow-md">
+        <h1 class="text-3xl font-bold text-white">Deluwar Hosin</h1>
+        <ul class="flex gap-6 text-gray-300">
+          <li><a href="#education" class="hover:text-white">Education</a></li>
+          <li><a href="#project" class="hover:text-white">Project</a></li>
+          <li><a href="#about" class="hover:text-white">About</a></li>
+          <li><a href="#contact" class="hover:text-white">Contact</a></li>
+        </ul>
+      </nav>
 
+      <!-- Profile Section -->
+      <section id="profile" class="flex flex-col md:flex-row items-center justify-center px-8 py-12 gap-8">
+        <div class="w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden shadow-lg border-4 border-gray-700">
+          <img src="image/profile babu.jpeg.jpg" alt="Profile" class="w-full h-full object-cover" />
+        </div>
+        <div class="max-w-lg text-center md:text-left">
+          <h2 class="text-2xl text-gray-300">Hi, I Am</h2>
+          <h1 class="text-4xl font-bold text-white mb-4">Deluwar Hosin</h1>
+          <p class="text-gray-400 leading-relaxed">
+            I love bringing ideas to life through code! I'm a Full-Stack Developer dedicated to creating software that
+            simplifies lives. My passion lies in injecting innovation and functionality into every line of code.
+          </p>
+          <a
+            href="#"
+            class="inline-block mt-6 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md transition"
+          >
+            Download CV
+          </a>
+        </div>
+      </section>
     </header>
-    <main id="education">
-        <!-- main section-1 -->
-        <h1 class="title">Educational Qualification</h1>
-        <div class="grid">
-            <!-- first -->
-            <div class="flex">
-                <div>
-                    <img src="image/school 2.jpg" alt="">
-                </div>
-                <div class="flex-text">
-                    <h1>Govindpur mohammadia Dakhil Madrasah</h1>
-                    <p class="s-1">Degree : SSC</p>
-                    <p class="s-1">Starting Year: 2013</p>
-                    <p class="s-1">Passing Year : 2018</p>
-                    <p class="s-1">GPA : 3.05</p>
-                    <button class="btn-v"> <a href="https://web.facebook.com/profile.php?id=100041341965993&sk=about">Visit Now</a></button>
-                </div>
-            </div>
-            <!-- second  -->
-            <div class="flex">
-                <div>
-                    <img src="image/versity.jpg" alt="">
-                </div>
-                <div class="flex-text">
-                    <h1>Mohua Technical And Business <br> College</h1>
-                    <p class="s-1">Degree : HSC</p>
-                    <p class="s-1">Starting Year: 2018</p>
-                    <p class="s-1">Passing Year : 2020</p>
-                    <p class="s-1">GPA : 4.17</p>
-                    <button class="btn-v"> <a href="">Visit Now</a></button>
-                </div>
-            </div>
-            <div>
-                <div class="flex">
-                    <div>
-                        <img src="./488050958_1169285871542985_8711692882018533997_n.jpg" alt="">
-                    </div>
-                    <div class="flex-text">
-                        <h1>Kalmakanda Government College<br> College</h1>
-                        <p class="s-1">Degree : Degree 3rd year</p>
-                        <p class="s-1">Starting Year: 2020/2021</p>
-                        <p class="s-1">Passing Year : ....</p>
-                        <p class="s-1">GPA : null</p>
-                        <button class="btn-v"> <a href="https://web.facebook.com/groups/266844113421840/?_rdc=1&_rdr#">Visit Now</a></button>
-                    </div>
-                </div>
-            </div>
+
+    <!-- 🌟 Education Section -->
+    <main id="education" class="px-8 py-12 bg-gray-800">
+      <h1 class="text-3xl font-bold text-center mb-10 text-blue-400">Educational Qualification</h1>
+
+      <div class="space-y-10">
+        <!-- SSC -->
+        <div class="flex flex-col md:flex-row bg-gray-700 rounded-lg shadow-lg overflow-hidden">
+          <img src="image/school 2.jpg" class="md:w-1/3 object-cover" />
+          <div class="p-6">
+            <h1 class="text-2xl font-semibold mb-2">Govindpur Mohammadia Dakhil Madrasah</h1>
+            <p>Degree: SSC</p>
+            <p>Starting Year: 2013</p>
+            <p>Passing Year: 2018</p>
+            <p>GPA: 3.05</p>
+            <a
+              href="https://web.facebook.com/profile.php?id=100041341965993&sk=about"
+              class="inline-block mt-4 bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded text-white"
+            >
+              Visit Now
+            </a>
+          </div>
         </div>
+
+        <!-- HSC -->
+        <div class="flex flex-col md:flex-row bg-gray-700 rounded-lg shadow-lg overflow-hidden">
+          <img src="image/versity.jpg" class="md:w-1/3 object-cover" />
+          <div class="p-6">
+            <h1 class="text-2xl font-semibold mb-2">Mohua Technical And Business College</h1>
+            <p>Degree: HSC</p>
+            <p>Starting Year: 2018</p>
+            <p>Passing Year: 2020</p>
+            <p>GPA: 4.17</p>
+            <a href="#" class="inline-block mt-4 bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded text-white">
+              Visit Now
+            </a>
+          </div>
+        </div>
+
+        <!-- Degree -->
+        <div class="flex flex-col md:flex-row bg-gray-700 rounded-lg shadow-lg overflow-hidden">
+          <img src="./488050958_1169285871542985_8711692882018533997_n.jpg" class="md:w-1/3 object-cover" />
+          <div class="p-6">
+            <h1 class="text-2xl font-semibold mb-2">Kalmakanda Government College</h1>
+            <p>Degree: Degree 3rd Year</p>
+            <p>Starting Year: 2020/2021</p>
+            <p>Passing Year: ...</p>
+            <p>GPA: null</p>
+            <a
+              href="https://web.facebook.com/groups/266844113421840/"
+              class="inline-block mt-4 bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded text-white"
+            >
+              Visit Now
+            </a>
+          </div>
+        </div>
+      </div>
     </main>
-    <!-- contract -->
-    <section id="contract">
-        <h1 class="title">Contract</h1>
-        <p class="des">You Can Find Me On Those Social Media</p>
-        <div class="grid-3">
-            <!-- facebook -->
-            <div>
-                <div>
-                    <img class="icon" src="./unnamed.png" alt="">
-                    <h1>Facebook</h1>
-                    <button><a href="https://www.facebook.com/deluwarhossenbabu/">Visit Profile</a></button>
-                    <img src="" alt="">
-                    <button></button>
-                </div>
-            </div>
 
-            <!-- whatsapp -->
-            <div>
-                <div>
-                    <div>
-                        <img class="iconn" src="image/WhatsApp.svg.webp" alt="">
-                        <h1>WhatsApp</h1>
-                        <button><a href="https://www.whatsapp.com/">Visit Profile</a></button>
-                        <img src="" alt="">
-                        <button></button>
-                    </div>
-                </div>
-            </div>
+    <!-- 🌟 Contact Section -->
+    <section id="contact" class="px-8 py-12 bg-gray-900">
+      <h1 class="text-3xl font-bold text-center text-blue-400 mb-4">Contact</h1>
+      <p class="text-center text-gray-400 mb-10">You can find me on these social platforms</p>
 
-               <div>
-                <div>
-                    <div>
-                        <img class="iconn" src="./instagram-logo.webp" alt="">
-                        <h1>Instagram</h1>
-                        <button><a href="https://www.instagram.com/deluwar695?igsh=MWlyZG55M2NoZ25tZg==">Visit Profile</a></button>
-                        <button></button>
-                    </div>
-                </div>
-            </div>
-            
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <!-- Facebook -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+          <img src="./unnamed.png" class="w-16 h-16 mx-auto mb-3" />
+          <h1 class="text-xl font-semibold">Facebook</h1>
+          <a
+            href="https://www.facebook.com/deluwarhossenbabu/"
+            class="inline-block mt-3 bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded text-white"
+          >
+            Visit Profile
+          </a>
         </div>
+
+        <!-- WhatsApp -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+          <img src="image/WhatsApp.svg.webp" class="w-16 h-16 mx-auto mb-3" />
+          <h1 class="text-xl font-semibold">WhatsApp</h1>
+          <a
+            href="https://www.whatsapp.com/"
+            class="inline-block mt-3 bg-green-500 hover:bg-green-600 px-4 py-2 rounded text-white"
+          >
+            Visit Profile
+          </a>
+        </div>
+
+        <!-- Instagram -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+          <img src="./instagram-logo.webp" class="w-16 h-16 mx-auto mb-3" />
+          <h1 class="text-xl font-semibold">Instagram</h1>
+          <a
+            href="https://www.instagram.com/deluwar695"
+            class="inline-block mt-3 bg-pink-500 hover:bg-pink-600 px-4 py-2 rounded text-white"
+          >
+            Visit Profile
+          </a>
+        </div>
+      </div>
     </section>
 
-    <footer style="background-color: aquamarine; text-align: center; width: auto; height: 200px; padding-top: 100px;">
-        <h1 style="color: brown; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">my name is
-            deluwar hosin babu</h1>
-        <button onclick="add()">babu</button> <br>
+    <!-- 🌟 Footer -->
+    <footer class="bg-blue-950 text-center py-10 mt-10">
+      <h1 class="text-2xl font-bold text-amber-400 mb-4">My name is Deluwar Hosin Babu</h1>
+      <p class="text-gray-400 max-w-3xl mx-auto">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, accusantium facilis. Nulla quam ratione eveniet
-        saepe pariatur debitis, magni temporibus quibusdam, repudiandae itaque optio minus ullam eos at, quidem
-        voluptatem.
-        <br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eius fugit ducimus corporis, sequi tempore reprehenderit iusto in rerum soluta commodi nesciunt voluptate iste nulla sit veniam saepe repellendus adipisci!
+        saepe pariatur debitis, magni temporibus quibusdam.
+      </p>
+      <p class="mt-4 text-gray-500 text-sm">© 2025 Deluwar Hosin. All rights reserved.</p>
     </footer>
-    <script>
-        function add() {
-
-            const babu = a + b;
-            console.log(babu)
-        }
-        add(2, 5)
-    </script>
-</body>
-
+  </body>
 </html>
