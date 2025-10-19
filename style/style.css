@@ -1,178 +1,244 @@
-*{
-    margin: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-#name{
+
+/* Header & Navbar */
+.header {
+    background-color: black;
+    color: white;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: 24px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+#name {
     font-size: 32px;
     color: white;
-   
 }
-#ul{
+
+#ul {
     display: flex;
-    text-decoration: none;
-     list-style: none;
-     gap: 15px;
+    list-style: none;
+    gap: 15px;
+    flex-wrap: wrap;
 }
-#ul a{
+
+#ul a {
     color: gray;
     text-decoration: none;
 }
-#ul a:hover{
-    color: white;
-}
-.nav{
-    display: flex;
-    color: white;
-    justify-content: space-between;
-    margin: 24px;
-    padding: 40px;
 
-}
-.header{
-    background-color: black;
+#ul a:hover {
     color: white;
-   padding-bottom: 50px;
-   margin-bottom: 100px;
-    
 }
-#profile{
+
+/* Profile Section */
+#profile {
     display: flex;
     margin: 80px;
     gap: 50px;
     align-items: center;
     justify-content: center;
-    
+    flex-wrap: wrap;
 }
-.text{
+
+#profile img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 16px;
+}
+
+.text {
     width: 50%;
     padding-left: 50px;
-   display: flex;
-   flex-direction: column;
-   gap: 16px;
-   
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 280px;
 }
-.text p{
+
+.text h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.text p {
     color: gray;
     width: 75%;
 }
-#profile img{
-    width: 100%;
 
-}
-.text h1{
-    font-size: 30px;
-    font-style: bold;
-   
-}
-.text button{
-    height: 30px;
-    width: 115px;
+.text button {
+    height: 40px;
+    width: 130px;
     border-radius: 4px;
     background-color: white;
-     color: black;
-     margin-top: 20px;
+    color: black;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
 }
-.flex{
+
+/* Grid Section */
+main {
+    padding: 96px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 10px;
+}
+
+.flex {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border: 1px solid gray;
-     padding: 30px;
-     border-radius: 16px;
-     gap: 6px;
+    padding: 30px;
+    border-radius: 16px;
+    gap: 10px;
 }
-.flex img{
-   
+
+.flex img {
     border-radius: 16px;
     max-width: 100%;
-   
 }
-.flex-text{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-main{
-    padding: 96px;
-}
-.grid{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    padding: 10px;
-    gap: 8px;
 
-}
-.title{
+.title {
     font-size: 48px;
-    font-style: bold;
+    font-weight: bold;
     text-align: center;
     margin-bottom: 16px;
 }
-.s-1{
+
+.s-1 {
     color: gray;
 }
-.btn-v{
-     height: 30px;
-    width: 115px;
+
+.btn-v {
+    height: 40px;
+    width: 130px;
     border-radius: 4px;
     background-color: white;
-     color: black;
-     margin-top: 20px;
+    color: black;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
 }
-#contract{
-    margin-top: 100px;
 
+#contract {
+    margin-top: 100px;
 }
-.title-2{
+
+.title-2 {
     text-align: center;
-    margin-left: auto;
 }
-.des{
-    color:gray;
-    text-align:center ;
+
+.des {
+    color: gray;
+    text-align: center;
     margin-bottom: 16px;
 }
-.grid-3{
+
+.grid-3 {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: repeat(3, 1fr);
     padding: 10px;
-    gap: 8px;
+    gap: 16px;
     text-align: center;
     align-items: center;
-
-
 }
-.icon{
+
+.icon,
+.iconn {
     height: 200px;
     border-radius: 50%;
     margin: 30px;
 }
-.iconn{
-    height:200px;
-    margin: 30px;
-    
+
+/* ------------------ */
+/* 📱 Small Devices */
+/* ------------------ */
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+        padding: 20px;
+    }
+
+    #ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #profile {
+        flex-direction: column;
+        margin: 40px 20px;
+        gap: 30px;
+    }
+
+    .text {
+        width: 90%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .text p {
+        width: 100%;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-3 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main {
+        padding: 40px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
 }
 
-@media screen and (max-width:576px) {
-    .nav{
-    margin: 4px;
-    padding: 40px;
+/* ------------------ */
+/* 📱 Extra Small Devices */
+/* ------------------ */
+@media screen and (max-width: 480px) {
+    #name {
+        font-size: 20px;
     }
-    .header{
-        font-size: medium;
-    }
-    #name{
-        font-size: medium;
-        padding-right: 18px;
-        
-    
-    }
-   .text{
-    padding: 5px;
-    font-size: medium;
-   }
-   .img{
-    width: 50%;
-    height: 500px;
 
-   }
+    .grid, .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .text {
+        font-size: small;
+        gap: 10px;
+    }
+
+    .text button, .btn-v {
+        width: 100%;
+    }
+
+    .nav {
+        padding: 10px;
+    }
 }
