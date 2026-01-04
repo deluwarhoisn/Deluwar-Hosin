@@ -7,6 +7,7 @@ import lon from '../../image/app.png'
 import lon2 from '../../image/lon2s.png'
 import img2 from '../../image/download.jpg'
 
+
 export const portfolioData = {  
   personal: {
     name: 'Deluwar Hosin',
