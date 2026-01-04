@@ -2,9 +2,12 @@
 import school2Img from '../../image/school 2.jpg'
 import versityImg from '../../image/versity.jpg'
 import profileImg from '../../image/488050958_1169285871542985_8711692882018533997_n.jpg'
-import img from'../../image/download.jpg'
+import img from '../../image/online.png'
+import lon from '../../image/app.png'
+import lon2 from '../../image/lon2s.png'
+import img2 from '../../image/download.jpg'
 
-export const portfolioData = {
+export const portfolioData = {  
   personal: {
     name: 'Deluwar Hosin',
     title: 'Frontend Developer',
@@ -17,53 +20,125 @@ export const portfolioData = {
     I believe in writing clean, maintainable code and always strive to follow best practices.`,
   },
   skills: [
-    { name: 'HTML5', level: 90 },
-    { name: 'CSS3', level: 88 },
+    { name: 'HTML', level: 90 },
+    { name: 'CSS', level: 88 },
     { name: 'JavaScript (ES6+)', level: 85 },
     { name: 'React.js', level: 82 },
     { name: 'Tailwind CSS', level: 85 },
     { name: 'Next.js', level: 75 },
     { name: 'Git', level: 80 },
   ],
-  projects: [
-    {
-      id: 1,
-      title: "MicroLoan System UI",
-      description:
-        "A modern and responsive UI for a microloan approval platform. Features clean layout, smooth interactions, and mobile-first design.",
-      tags: ["React", "Tailwind", "Framer Motion"],
-      image: "/image/download.jpg", // file is in `public/download.jpg`
-      liveLink: "https://microloan-reques.web.app/",
-      githubLink: "https://github.com/your-username/project-1"
-    },
+ projects: [
+  {
+    id: 1,
+    title: "MicroLoan System UI",
+    description:
+      "A modern and responsive UI for a microloan approval platform. Features clean layout, smooth interactions, and a mobile-first design.",
+    tags: ["React", "Tailwind", "Framer Motion"],
+    image: lon2, // Placeholder - replace with actual screenshot
+    liveLink: "https://microloan-reques.web.app/",
+    githubLink: "https://github.com/deluwarhoisn/Microloan-Request-",
+    // Detailed project information
+    mainTech: ["React.js", "Tailwind CSS", "Framer Motion", "Firebase"],
+    detailedDescription: "A comprehensive microloan management system UI that provides a seamless experience for loan applicants and administrators. The platform features a modern design with smooth animations, responsive layouts, and intuitive user flows. Built with React.js for component-based architecture, styled with Tailwind CSS for rapid UI development, and enhanced with Framer Motion for engaging animations.",
+    challenges: [
+      "Creating a user-friendly loan application flow",
+      "Implementing responsive design for mobile-first approach",
+      "Integrating smooth animations without affecting performance",
+      "Designing an intuitive dashboard for loan management"
+    ],
+    improvements: [
+      "Add real-time loan status tracking",
+      "Implement advanced filtering and search functionality",
+      "Add multi-language support",
+      "Integrate with payment gateways for loan disbursement"
+    ],
+    features: [
+      "Responsive loan application form",
+      "Interactive dashboard with loan statistics",
+      "Smooth page transitions and micro-interactions",
+      "Mobile-optimized user interface"
+    ]
+  },
 
+  {
+    id: 2,
+    title: "Online Learning Platform",
+    description:
+      "A user-friendly frontend for managing courses, instructors, and student interactions with a strong focus on usability.",
+    tags: ["React", "Tailwind", "Context API"],
+    image: img, // Placeholder - replace with actual screenshot
+    liveLink: "https://cheerful-brigadeiros-0acc0f.netlify.app/",
+    githubLink: "https://github.com/deluwarhoisn/My-Online-Learning-Platform",
+    // Detailed project information
+    mainTech: ["React.js", "Context API", "Tailwind CSS", "React Router"],
+    detailedDescription: "A comprehensive online learning platform that connects students with instructors through an intuitive interface. The platform features course management, student enrollment, progress tracking, and interactive learning modules. Built with React.js using Context API for state management and React Router for seamless navigation.",
+    challenges: [
+      "Managing complex state across multiple components",
+      "Creating an intuitive course browsing experience",
+      "Implementing responsive design for various devices",
+      "Optimizing performance for large course catalogs"
+    ],
+    improvements: [
+      "Add video streaming capabilities",
+      "Implement real-time chat between students and instructors",
+      "Add quiz and assessment features",
+      "Integrate with payment systems for course purchases"
+    ],
+    features: [
+      "Course catalog with search and filtering",
+      "Student dashboard with progress tracking",
+      "Instructor profile and course management",
+      "Responsive design for all devices"
+    ]
+  },
 
-    {
-      id: 2,
-      title: "Learning Platform UI",
-      description:
-        "Frontend interface for managing courses, instructors, and student interactions. Designed for clarity and high usability.",
-      tags: ["React", "Tailwind", "Context API"],
-      liveLink: "https://zesty-duckanoo-b59fa2.netlify.app/",
-      githubLink: "https://github.com/your-username/project-2"
-    },
-    {
-      id: 3,
-      title: "Weather Tracker UI",
-      description:
-        "Weather search interface displaying live temperature, conditions, and city-based queries. Clean typography & animations.",
-      tags: ["React", "API", "Tailwind"],
-      liveLink: "https://dainty-sherbet-407741.netlify.app/",
-      githubLink: "https://github.com/your-username/project-3"
-    },
-  ],
+  {
+    id: 3,
+    title: "HERO.IO",
+    description:
+      "We craft innovative apps designed to make everyday life simpler, smarter, and more exciting—turning ideas into impactful digital experiences.",
+    tags: ["React", "API", "Tailwind"],
+    image: lon, // Placeholder - replace with actual screenshot
+    liveLink: "https://dainty-sherbet-407741.netlify.app/",
+    githubLink: "https://github.com/deluwarhoisn/my-Hero-Apps",
+    // Detailed project information
+    mainTech: ["React.js", "REST API", "Tailwind CSS", "Axios"],
+    detailedDescription: "HERO.IO is a collection of innovative web applications designed to simplify everyday tasks. The platform showcases various mini-applications and tools that demonstrate modern web development techniques and user-centered design principles. Each app within the platform serves a specific purpose while maintaining a cohesive design language.",
+    challenges: [
+      "Creating a unified design system across multiple apps",
+      "Integrating various APIs efficiently",
+      "Ensuring consistent performance across different app types",
+      "Maintaining code reusability between different applications"
+    ],
+    improvements: [
+      "Add user authentication and personalization",
+      "Implement offline functionality with service workers",
+      "Add analytics and usage tracking",
+      "Create a plugin system for third-party integrations"
+    ],
+    features: [
+      "Multiple integrated applications",
+      "Clean and modern user interface",
+      "API integration for dynamic content",
+      "Responsive design across all apps"
+    ]
+  },
+],
+
   social: {
-    github: 'https://github.com/yourusername',
-    linkedin: 'https://linkedin.com/in/yourusername',
-    email: 'deluwar.hosin@example.com',
-    facebook: 'https://www.facebook.com/deluwarhossenbabu/',
-    instagram: 'https://www.instagram.com/deluwar695',
-    whatsapp: 'https://www.whatsapp.com/',
+    github: 'https://github.com/deluwarhoisn',
+    linkedin: 'https://www.linkedin.com/in/deluwar-hosin/',
+    email: 'babuhossen301@gmail.com',
+    facebook: 'https://web.facebook.com/deluwarhossenbabu/',
+    phone: '01754505815', // Add your actual phone number
+    whatsapp: '01932210502', // Add your actual WhatsApp number
+  },
+  contact: {
+    email: 'babuhossen301@gmail.com',
+    phone: '01754505815', // Add your actual phone number
+    whatsapp: '01932210502', // Add your actual WhatsApp number
+    address: 'kolmakanda,Netrakona, Bangladesh', // Add your location
   },
   education: [
     {
@@ -103,7 +178,7 @@ export const portfolioData = {
       linkText: 'Visit College',
     },
     {
-      image: img,
+      image: img2,
       alt: 'Programming Hero Batch 12',
       title: 'Programming Hero Batch 12',
       degree: 'Batch 12 - Web Development Course',
@@ -117,6 +192,38 @@ export const portfolioData = {
       linkText: 'View Certificate',
     },
 
+  ],
+  experience: [
+    {
+      id: 1,
+      company: "Freelance Web Developer",
+      position: "Frontend Developer",
+      duration: "2024 - Present",
+      location: "Remote",
+      description: "Working on various client projects focusing on React.js applications, responsive web design, and modern UI/UX implementations.",
+      responsibilities: [
+        "Developed responsive web applications using React.js and Tailwind CSS",
+        "Collaborated with clients to understand requirements and deliver solutions",
+        "Implemented modern UI/UX designs with smooth animations",
+        "Optimized applications for performance and accessibility"
+      ],
+      technologies: ["React.js", "JavaScript", "Tailwind CSS", "HTML5", "CSS3"]
+    },
+    {
+      id: 2,
+      company: "Programming Hero",
+      position: "Web Development Student",
+      duration: "2024 - 2025",
+      location: "Online",
+      description: "Completed comprehensive web development course covering frontend and backend technologies.",
+      responsibilities: [
+        "Learned modern web development technologies and best practices",
+        "Built multiple projects using React.js, Node.js, and MongoDB",
+        "Participated in coding challenges and collaborative projects",
+        "Gained experience in full-stack development"
+      ],
+      technologies: ["React.js", "Node.js", "MongoDB", "Express.js", "JavaScript"]
+    }
   ],
   stats: [
     { number: 10, suffix: '+', label: 'Projects Completed', icon: '🚀' },

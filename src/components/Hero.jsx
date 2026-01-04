@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { ArrowDown, Github, Linkedin, Mail, Facebook, Instagram } from 'lucide-react'
+import { ArrowDown, Github, Linkedin, Mail, Facebook, Instagram, Download } from 'lucide-react'
 import { portfolioData } from '../data/portfolioData'
 import profileImage from '../../image/profile babu.jpeg.jpg'
 
@@ -52,43 +52,65 @@ const Hero = () => {
             animate="visible"
             className="text-center lg:text-left"
           >
-          <motion.h1
-            variants={itemVariants}
-            className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent"
-          >
-            {personal.headline}
-          </motion.h1>
-
-          <motion.p
-            variants={itemVariants}
-            className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-slate-700 dark:text-slate-300 mb-6"
-          >
-            {personal.subheadline}
-          </motion.p>
-
-          <motion.p
-            variants={itemVariants}
-            className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-8"
-          >
-            {personal.about.split('.')[0]}.
-          </motion.p>
-
-          <motion.div
-            variants={itemVariants}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
-          >
-            <motion.a
-              href="#projects"
-              onClick={(e) => handleNavClick(e, '#projects')}
-              className="px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
+            <motion.h1
+              variants={itemVariants}
+              className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent"
             >
-              View My Work
-              <ArrowDown className="inline-block" size={20} />
-            </motion.a>
+              {personal.headline}
+            </motion.h1>
 
-            <div className="flex items-center gap-4 flex-wrap justify-center">
+            <motion.p
+              variants={itemVariants}
+              className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-slate-700 dark:text-slate-300 mb-6"
+            >
+              {personal.subheadline}
+            </motion.p>
+
+            <motion.p
+              variants={itemVariants}
+              className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-8"
+            >
+              {personal.about.split('.')[0]}.
+            </motion.p>
+
+            <motion.div
+              variants={itemVariants}
+              className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
+            >
+              <motion.a
+                href="#projects"
+                onClick={(e) => handleNavClick(e, '#projects')}
+                className="px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                View My Work
+                <ArrowDown className="inline-block" size={20} />
+              </motion.a>
+
+              <motion.button
+                onClick={() => {
+                  const resumeUrl = '/resume.pdf'
+                  const link = document.createElement('a')
+                  link.href = resumeUrl
+                  link.download = 'Deluwar_Hosin_Resume.pdf'
+                  document.body.appendChild(link)
+                  link.click()
+                  document.body.removeChild(link)
+                }}
+                className="px-8 py-4 bg-white dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 border-2 border-indigo-600 dark:border-indigo-400 rounded-lg font-semibold text-lg hover:bg-indigo-50 dark:hover:bg-slate-700 transition-all duration-300 flex items-center gap-2"
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Download size={20} />
+                Download Resume
+              </motion.button>
+            </motion.div>
+
+            <motion.div
+              variants={itemVariants}
+              className="flex items-center gap-4 flex-wrap justify-center"
+            >
               <motion.a
                 href={social.github}
                 target="_blank"
@@ -141,9 +163,7 @@ const Hero = () => {
               >
                 <Mail size={24} />
               </motion.a>
-            </div>
-          </motion.div>
-
+            </motion.div>
           </motion.div>
 
           {/* Profile Image */}
