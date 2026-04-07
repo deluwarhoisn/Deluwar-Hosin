@@ -131,30 +131,30 @@ export const portfolioData = {
     id: 4,
     title: "Inventory Management System",
     description:
-      "A complete inventory management web app for tracking products, stock levels, suppliers, and sales records in real time.",
+      "A full-stack inventory platform for managing products, stock levels, suppliers, and sales operations in real time.",
     tags: ["React", "Node.js", "MongoDB", "Express"],
-    image:img3,
+    image: img3,
     liveLink: "https://stockifyone.vercel.app/",
     githubLink: "#",
     mainTech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
-    detailedDescription: "This Inventory Management System helps businesses manage products, categories, suppliers, and stock movement from a single dashboard. It includes inventory updates, low-stock monitoring, and sales history tracking. The interface is designed for quick daily operations, while the backend supports reliable CRUD operations and scalable data management.",
+    detailedDescription: "This Inventory Management System helps businesses handle product, category, and supplier operations from a centralized dashboard. It includes stock updates, low-stock monitoring, and sales history tracking for daily decision-making. The frontend focuses on fast, user-friendly workflows, while the backend provides secure authentication and reliable CRUD operations for scalable inventory data.",
     challenges: [
-      "Keeping stock quantity consistent across create, update, and sales operations",
-      "Designing efficient filters and search for large product lists",
-      "Handling role-based access between admin and staff users",
-      "Maintaining fast response times with growing inventory data"
+      "Keeping stock quantities consistent across product updates and sales transactions",
+      "Designing fast search and filtering for large inventory datasets",
+      "Implementing role-based access for admin and staff accounts",
+      "Maintaining stable performance as inventory records grow"
     ],
     improvements: [
-      "Add barcode and QR code scanning support",
-      "Generate downloadable inventory and sales reports",
-      "Integrate email and SMS alerts for low-stock products",
-      "Add multi-warehouse inventory support"
+      "Add barcode and QR code scanning for faster item handling",
+      "Generate downloadable inventory and sales analytics reports",
+      "Enable email and SMS alerts for low-stock products",
+      "Support multi-warehouse stock management"
     ],
     features: [
-      "Product, category, and supplier management",
-      "Real-time stock tracking and low-stock alerts",
-      "Sales and stock movement history",
-      "Role-based dashboard for inventory operations"
+      "Product, category, and supplier management modules",
+      "Real-time stock tracking with low-stock notifications",
+      "Sales and stock movement history logs",
+      "Role-based dashboard for day-to-day inventory operations"
     ]
   },
 ],
