@@ -125,6 +125,37 @@ export const portfolioData = {
       "Responsive design across all apps"
     ]
   },
+
+  {
+    id: 4,
+    title: "Inventory Management System",
+    description:
+      "A complete inventory management web app for tracking products, stock levels, suppliers, and sales records in real time.",
+    tags: ["React", "Node.js", "MongoDB", "Express"],
+    image: null,
+    liveLink: "https://stockifyone.vercel.app/",
+    githubLink: "#",
+    mainTech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
+    detailedDescription: "This Inventory Management System helps businesses manage products, categories, suppliers, and stock movement from a single dashboard. It includes inventory updates, low-stock monitoring, and sales history tracking. The interface is designed for quick daily operations, while the backend supports reliable CRUD operations and scalable data management.",
+    challenges: [
+      "Keeping stock quantity consistent across create, update, and sales operations",
+      "Designing efficient filters and search for large product lists",
+      "Handling role-based access between admin and staff users",
+      "Maintaining fast response times with growing inventory data"
+    ],
+    improvements: [
+      "Add barcode and QR code scanning support",
+      "Generate downloadable inventory and sales reports",
+      "Integrate email and SMS alerts for low-stock products",
+      "Add multi-warehouse inventory support"
+    ],
+    features: [
+      "Product, category, and supplier management",
+      "Real-time stock tracking and low-stock alerts",
+      "Sales and stock movement history",
+      "Role-based dashboard for inventory operations"
+    ]
+  },
 ],
 
   social: {
