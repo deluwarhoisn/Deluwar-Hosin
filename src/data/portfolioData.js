@@ -6,6 +6,7 @@ import img from '../../image/online.png'
 import lon from '../../image/app.png'
 import lon2 from '../../image/lon2s.png'
 import img2 from '../../image/download.jpg'
+import img3 from '../../image/Screenshot 2026-04-07 214912.png'
 
 
 export const portfolioData = {  
@@ -132,7 +133,7 @@ export const portfolioData = {
     description:
       "A complete inventory management web app for tracking products, stock levels, suppliers, and sales records in real time.",
     tags: ["React", "Node.js", "MongoDB", "Express"],
-    image: null,
+    image:img3,
     liveLink: "https://stockifyone.vercel.app/",
     githubLink: "#",
     mainTech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
