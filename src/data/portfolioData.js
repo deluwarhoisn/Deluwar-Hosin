@@ -32,6 +32,36 @@ export const portfolioData = {
   ],
  projects: [
   {
+    id: 4,
+    title: "Inventory Management System",
+    description:
+      "A full-stack inventory platform for managing products, stock levels, suppliers, and sales operations in real time.",
+    tags: ["React", "Node.js", "MongoDB", "Express"],
+    image: img3,
+    liveLink: "https://stockifyone.vercel.app/",
+    githubLink: "#",
+    mainTech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
+    detailedDescription: "This Inventory Management System helps businesses handle product, category, and supplier operations from a centralized dashboard. It includes stock updates, low-stock monitoring, and sales history tracking for daily decision-making. The frontend focuses on fast, user-friendly workflows, while the backend provides secure authentication and reliable CRUD operations for scalable inventory data.",
+    challenges: [
+      "Keeping stock quantities consistent across product updates and sales transactions",
+      "Designing fast search and filtering for large inventory datasets",
+      "Implementing role-based access for admin and staff accounts",
+      "Maintaining stable performance as inventory records grow"
+    ],
+    improvements: [
+      "Add barcode and QR code scanning for faster item handling",
+      "Generate downloadable inventory and sales analytics reports",
+      "Enable email and SMS alerts for low-stock products",
+      "Support multi-warehouse stock management"
+    ],
+    features: [
+      "Product, category, and supplier management modules",
+      "Real-time stock tracking with low-stock notifications",
+      "Sales and stock movement history logs",
+      "Role-based dashboard for day-to-day inventory operations"
+    ]
+  },
+  {
     id: 1,
     title: "MicroLoan System UI",
     description:
@@ -127,36 +157,7 @@ export const portfolioData = {
     ]
   },
 
-  {
-    id: 4,
-    title: "Inventory Management System",
-    description:
-      "A full-stack inventory platform for managing products, stock levels, suppliers, and sales operations in real time.",
-    tags: ["React", "Node.js", "MongoDB", "Express"],
-    image: img3,
-    liveLink: "https://stockifyone.vercel.app/",
-    githubLink: "#",
-    mainTech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
-    detailedDescription: "This Inventory Management System helps businesses handle product, category, and supplier operations from a centralized dashboard. It includes stock updates, low-stock monitoring, and sales history tracking for daily decision-making. The frontend focuses on fast, user-friendly workflows, while the backend provides secure authentication and reliable CRUD operations for scalable inventory data.",
-    challenges: [
-      "Keeping stock quantities consistent across product updates and sales transactions",
-      "Designing fast search and filtering for large inventory datasets",
-      "Implementing role-based access for admin and staff accounts",
-      "Maintaining stable performance as inventory records grow"
-    ],
-    improvements: [
-      "Add barcode and QR code scanning for faster item handling",
-      "Generate downloadable inventory and sales analytics reports",
-      "Enable email and SMS alerts for low-stock products",
-      "Support multi-warehouse stock management"
-    ],
-    features: [
-      "Product, category, and supplier management modules",
-      "Real-time stock tracking with low-stock notifications",
-      "Sales and stock movement history logs",
-      "Role-based dashboard for day-to-day inventory operations"
-    ]
-  },
+  
 ],
 
   social: {
