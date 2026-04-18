@@ -54,6 +54,7 @@ export const portfolioData = {
       "Enable email and SMS alerts for low-stock products",
       "Support multi-warehouse stock management"
     ],
+    
     features: [
       "Product, category, and supplier management modules",
       "Real-time stock tracking with low-stock notifications",
