@@ -26,7 +26,7 @@ export const portfolioData = {
     { name: 'CSS', level: 88 },
     { name: 'JavaScript (ES6+)', level: 85 },
     { name: 'React.js', level: 82 },
-    { name: 'Tailwind CSS', level: 85 },
+    { name: 'Tailwind CSS', level: 90 },
     { name: 'Next.js', level: 75 },
     { name: 'Git', level: 80 },
   ],
