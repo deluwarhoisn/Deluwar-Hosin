@@ -90,13 +90,8 @@ const Hero = () => {
 
               <motion.button
                 onClick={() => {
-                  const resumeUrl = '/resume.pdf'
-                  const link = document.createElement('a')
-                  link.href = resumeUrl
-                  link.download = 'Deluwar_Hosin_Resume.pdf'
-                  document.body.appendChild(link)
-                  link.click()
-                  document.body.removeChild(link)
+                  const resumeUrl = 'https://drive.google.com/file/d/1Sf8q93dCJIcYITzdHr7x-IjbPccHIAkv/view?usp=sharing'
+                  window.open(resumeUrl, '_blank', 'noopener,noreferrer')
                 }}
                 className="px-8 py-4 bg-white dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 border-2 border-indigo-600 dark:border-indigo-400 rounded-lg font-semibold text-lg hover:bg-indigo-50 dark:hover:bg-slate-700 transition-all duration-300 flex items-center gap-2"
                 whileHover={{ scale: 1.05, y: -2 }}
