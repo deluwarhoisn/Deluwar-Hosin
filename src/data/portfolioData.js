@@ -173,7 +173,7 @@ export const portfolioData = {
     email: 'babuhossen301@gmail.com',
     phone: '01754505815', // Add your actual phone number
     whatsapp: '01932210502', // Add your actual WhatsApp number
-    address: 'kolmakanda,Netrakona, Bangladesh', // Add your location
+    address: 'kalmakanda,Netrakona, Bangladesh', // Add your location
   },
   education: [
     {
