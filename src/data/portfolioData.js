@@ -204,7 +204,7 @@ export const portfolioData = {
       image: profileImg,
       alt: 'Kalmakanda Government College',
       title: 'Kalmakanda Government College',
-      degree: "Bachelor's Degree (3rd Year)",
+      degree: "Bachelor's Degree Pss",
       details: [
         { label: 'Started', value: '2020/2021' },
         { label: 'Status', value: 'Ongoing' },
